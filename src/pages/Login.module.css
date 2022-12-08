@@ -1,0 +1,65 @@
+
+.login_btn{
+    text-align: center;
+}
+
+.btn{
+    background-color: black;
+    color: white; font-size: 15px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    border: none;
+   
+}
+
+.btn:hover{
+    background-color: rgb(47, 77, 245);
+    color: rgb(255, 255, 255);
+
+    
+}
+
+.Login{
+    position: absolute;
+    left: 50%;
+    top: 68%;
+    transform: translate(-50%,-50%);
+    
+}
+
+
+.login_form{
+    position: relative;
+    width: 400px;   
+}
+
+.login_form input{
+    width: 100%;
+    padding: 20px 10px 10px;
+    background-color:black;      
+    border: none;
+    border-radius: 10px;
+    border-bottom: 1px solid #999;
+    font-size:18px; color:#fff;
+
+}
+
+.login_form input:focus{
+    outline-color: rgb(74, 131, 246);
+}
+
+.login_form .login_ID{
+    margin-bottom: 6px;
+}
+.login_form .login_ID label{
+    margin-right: 4px;
+}
+
+.login_PW{
+    margin-bottom: 30px;
+}
+
+.login_title{
+    text-align: center; margin-top: 2rem;
+}
+

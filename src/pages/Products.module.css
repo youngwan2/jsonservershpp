@@ -1,0 +1,25 @@
+.product_list{
+    display: flex;
+    text-align: center;
+
+}
+
+.title{
+    margin-left: 3rem;  margin-top: 2rem;  margin-bottom: 0.5rem;
+}
+
+
+.top_shift{
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    background-color: gray;
+    padding: 5px 15px 5px 15px; border-radius: 10px;
+    font-weight: bold;
+
+}
+
+.top_shift:hover{
+    background-color: black;
+    color:white;
+}

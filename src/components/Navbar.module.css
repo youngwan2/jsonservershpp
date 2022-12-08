@@ -1,0 +1,143 @@
+
+/* Navbar 컴포넌트 스타일 시트 */
+
+
+/* 모바일용 드롭다운 박스 */
+.bars{
+    position: absolute;
+    top: 0.7rem; left: 1rem;
+}
+
+
+
+.login_btn{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+.login_btn div{
+    padding-left: 5px;
+    position: relative;
+    top: -3px; font-weight:500;
+}
+
+.home_logo{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.menu_container{ 
+    display: flex;
+    justify-content: center;
+}
+
+
+.menu_list{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    top: 270px;
+    padding:0;
+
+}
+
+.menu_list li{
+    display: inline;
+    padding: 10px;
+}
+
+.menu_list li:hover{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.menu_list button{
+    border: none;
+    background-color: white;
+    font-size: 16px;
+}
+
+.menu_list button:focus{
+    color: brown;
+    font-weight: bold;
+}
+
+.search{
+    margin-top: -1rem; margin-left: 1rem;  margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.search input{
+    margin-left: 8px; margin-right: 5px;
+    width: 300px;
+    border: hidden; border-radius: 5px;
+    background: black;
+    color:white; font-size: 16px; font-weight: 600;
+    padding: 5px;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.search input:focus{
+    outline: none;
+
+}
+
+
+@media screen and (max-width:600px) {
+   
+    .menu_container{
+        display: flex;
+       
+        
+    }
+   
+    .menu_list{
+        flex-direction: column;
+        position: absolute;
+        top: 4rem;
+        right: 0;
+        border: 1px solid black;
+        border-radius: 6px;
+        width: 100%;
+        margin-top: 0;
+        background-color: black;
+        
+            
+    }
+
+    .menu_list li{
+        display: inline-block;
+        margin: 3px; 
+    }
+
+    .menu_list button{
+        background-color: black;
+        color: white;
+        
+    }
+
+    .menu_list li:hover{
+        border-color: brown;
+
+    }
+    .bars{
+        position: absolute;
+        top: 0.7rem; left: 1rem;
+        display: block;
+    }
+
+    body::before{
+        display: none;
+        content: '';
+        position: fixed ;
+        background-color: gray;
+        opacity: 30%;
+        top: 0; left: 0; right: 0; bottom: 0;
+    }
+    
+}

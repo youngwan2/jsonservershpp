@@ -1,0 +1,24 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.product_css{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center
+
+}
+
+
+.product_item{
+     margin-bottom: 2rem; 
+     margin: 1rem;
+}
+
+.product_item:hover{
+    transform: scale(1.1,1.1);
+}
