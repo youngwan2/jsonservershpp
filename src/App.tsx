@@ -4,8 +4,6 @@ import {Routes,Route} from 'react-router-dom'
 import Products from './pages/Products';
 import Detail from './pages/Detail';
 import Login from './pages/Login';
-import Home from './pages/Home';
-import Card from './components/card';
 import Navbar from './components/Navbar';
 
 
@@ -27,9 +25,8 @@ function App() {
   return (
     <div className="App">
       <Navbar authentication={authentication} setAuthentication={setAuthentication}/>
-
+      <Products authentication={authentication}/>
       <Routes>
-        <Route path='/home' element={<Home/>}></Route>
         <Route path='/products' element={<Products authentication={authentication}/>}></Route>
         <Route path='/products/:id'element={<Detail/>}></Route>
         <Route path='/login' element={<Login setAuthentication ={setAuthentication}/>}></Route>
