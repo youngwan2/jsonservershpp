@@ -25,10 +25,10 @@ function App() {
   return (
     <div className="App">
       <Navbar authentication={authentication} setAuthentication={setAuthentication}/>
-      <Products authentication={authentication}/>
+    
       <Routes>
-        <Route path='/products' element={<Products authentication={authentication}/>}></Route>
-        <Route path='/products/:id'element={<Detail/>}></Route>
+        <Route path='' element={<h2 style={{textAlign:'center'}}>로고 이미지 클릭 시 상품 정렬<br/><br/>--기존 메인 배경 넣는 곳--</h2>}></Route>
+        <Route path='/products/' element={<Products authentication={authentication}/>}></Route>
         <Route path='/login' element={<Login setAuthentication ={setAuthentication}/>}></Route>
         <Route path='/detail/:id' element={<Detail/>}></Route>
       </Routes>

@@ -22,7 +22,7 @@ console.log()
 
     const getProducts = useCallback( async()=>{
         let searchQueryVal = searchParams.get('q'||'')
-        let url = new URL(`https://my-json-server.typicode.com/youngwan2/jsonservershpp/products/?q=${searchQueryVal}`)
+        let url = new URL(`https://my-json-server.typicode.com/youngwan2/jsonservershpp/products?q=${searchQueryVal}`)
         console.log(url);
         let res = await fetch(url)
         let getData = await res.json()
