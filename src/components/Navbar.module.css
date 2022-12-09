@@ -8,18 +8,30 @@
     top: 0.7rem; left: 1rem;
 }
 
-
+.cart_logo{
+    position: absolute;
+    right: 6rem; font-weight: 500;
+    top: 0.8rem;
+    cursor: pointer;
+    font-size: 14.3px;
+}
 
 .login_btn{
     display: flex;
     justify-content: flex-end;
     padding: 15px;
+    cursor: pointer;
 }
 
 .login_btn div{
     padding-left: 5px;
     position: relative;
     top: -3px; font-weight:500;
+}
+
+
+.login_title{
+    font-size: 14px;
 }
 
 .home_logo{
@@ -140,4 +152,17 @@
         top: 0; left: 0; right: 0; bottom: 0;
     }
     
+}
+
+
+@media screen and (max-width:365px) {
+    .search input{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .search input{
+        width: 200px;
+    }
 }

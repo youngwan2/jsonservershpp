@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-regular-svg-icons'
-import {faSearch,faBars} from '@fortawesome/free-solid-svg-icons'
+import {faSearch,faBars,faCartShopping} from '@fortawesome/free-solid-svg-icons'
 import { useNavigate} from "react-router-dom";
 import styles from '../components/Navbar.module.css';
 
@@ -27,7 +27,14 @@ const Navbar:React.FC<NavarType>= ({authentication,setAuthentication})=>{
 
     return (
         <div className="Navbar">
-            
+            <div onClick={()=>{
+                authentication ===true?
+                navigate('/cart') : navigate('/login')
+            }}
+                className={styles.cart_logo}>
+                <FontAwesomeIcon icon={faCartShopping}/> 장바구니 
+            </div>
+
             <div className={styles.login}>
                 <div 
                     className={styles.login_btn}>
@@ -38,7 +45,7 @@ const Navbar:React.FC<NavarType>= ({authentication,setAuthentication})=>{
                             navigate('/login')
                             setAuthentication(false)
                         }}>
-                           {authentication ===true? 'logout': 'login'}
+                           {authentication ===true? '로그아웃': '로그인'}
                     </div>
                 </div>
             </div>

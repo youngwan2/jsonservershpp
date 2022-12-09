@@ -4,6 +4,7 @@ import {Routes,Route} from 'react-router-dom'
 import Products from './pages/Products';
 import Detail from './pages/Detail';
 import Login from './pages/Login';
+import Cart from './pages/Cart';
 import Navbar from './components/Navbar';
 
 
@@ -31,6 +32,7 @@ function App() {
         <Route path='/products/' element={<Products authentication={authentication}/>}></Route>
         <Route path='/login' element={<Login setAuthentication ={setAuthentication}/>}></Route>
         <Route path='/detail/:id' element={<Detail/>}></Route>
+        <Route path='/cart' element ={<Cart/>}></Route>
       </Routes>
     </div>
   );

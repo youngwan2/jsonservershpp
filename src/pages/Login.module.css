@@ -63,3 +63,18 @@
     text-align: center; margin-top: 2rem;
 }
 
+
+@media screen and (max-width:450px) {
+    .login_form{
+        width: 300px;
+    }
+    
+}
+
+
+@media screen and (max-width:360px) {
+    .login_form{
+        width: 250px;
+    }
+    
+}
